@@ -32,3 +32,80 @@ li a:hover, .dropdown:hover .dropbtn{
     background: rgb(20, 20, 20);
     
 }
+
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    letter-spacing: 2px;
+    
+    
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: 10px;
+    font-size: 15px;
+    width: 100px;
+}
+
+.data{
+    font-size: 14px;
+}
+
+
+.boxform{
+    position: relative;
+}
+
+.inputLabel{
+    
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputLabel:focus ~.labelinput,.inputLabel:valid ~.labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: aqua;
+}
+
+#submit{
+    background: rgb(0, 119, 255);
+    width: 100%;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-size: 15pz;
+    cursor: pointer;
+    border-radius: 10px; 
+    height: 30px; 
+    margin-top: 20px;
+
+}
+
+#submit:hover{
+    background: rgb(4, 92, 192);  
+   
+}
