@@ -7,7 +7,7 @@
     <h2>Editar Aluno</h2>
     
     <?php
-    include 'db.php';
+    include 'cone.php';
     
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
@@ -18,7 +18,7 @@
             $row = $result->fetch_assoc();
     ?>
     
-    <form action="update.php" method="POST">
+    <form action="tualizar.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
         Nome: <input type="text" name="nome" value="<?php echo $row['nome']; ?>" required><br>
         Email: <input type="email" name="email" value="<?php echo $row['email']; ?>" required><br>

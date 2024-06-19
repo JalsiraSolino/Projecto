@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Cadastrar Aluno</h2>
-    <form action="create.php" method="POST">
+    <form action="cadastro.php" method="POST">
         Nome: <input type="text" name="nome" required><br>
         Email: <input type="email" name="email" required><br>
         Telefone: <input type="text" name="telefone" required><br>

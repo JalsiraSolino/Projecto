@@ -14,6 +14,6 @@ if (isset($_GET['id'])) {
     $conn->close();
 }
 
-header("Location: read.php");
+header("Location: mostrar.php");
 exit();
 ?>

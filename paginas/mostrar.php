@@ -14,7 +14,7 @@
             <th>Ações</th>
         </tr>
         <?php
-        include 'db.php';
+        include 'cone.php';
         
         $sql = "SELECT * FROM alunos";
         $result = $conn->query($sql);
@@ -27,8 +27,8 @@
                         <td>{$row['email']}</td>
                         <td>{$row['telefone']}</td>
                         <td>
-                            <a href='update.php?id={$row['id']}'>Editar</a>
-                            <a href='delete.php?id={$row['id']}'>Excluir</a>
+                            <a href='tualizar.php?id={$row['id']}'>Editar</a>
+                            <a href='apagar.php?id={$row['id']}'>Excluir</a>
                         </td>
                       </tr>";
             }
